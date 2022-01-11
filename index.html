@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>FizzBuzz Generator</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">FizzBuzz Generator</h1>
+    </header>
+    <main class="container">
+        <div class="controllers">
+            <div class="values">
+                <label for="minNum">Minimum value:</label>
+                <input type="number" value="1" name="minNum" id="minNum">
+                <label for="maxNum">Maximum value:</label>
+                <input type="number" value="100" name="maxNum" id="maxNum">
+                <label for="maxNum">Fizz value:</label>
+                <input type="range" min="1" max="9" value="3" class="slider" id="fizzVal">
+                <label for="maxNum">Buzz value:</label>
+                <input type="range" min="1" max="9" value="5" class="slider" id="buzzVal">
+            </div>
+            <div class="actions">
+                <button type="submit" id="clear">Clear cells</button>
+                <button type="submit" id="reset">Reset values to defaults</button>
+                <button type="submit" id="generateCells">Generate cells</button>
+            </div>
+            
+        </div>
+        <div id="cells"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

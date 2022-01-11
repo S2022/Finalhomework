@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+}
+
+div {
+    padding: 10px 0; 
+    margin: 10px 0;
+}
+
+input {
+    margin-right: 20px;
+}
+
+button {
+    padding: 0 10px;
+    margin: 10px 5px;
+}
+
+.controllers {
+    display: flexbox;
+    justify-content: center;
+    gap: 1000px;
+}
+
+
+#cells { 
+    display: grid;
+    
+}
+
+#cells div {
+    text-align: center;
+    height: 60px;
+    width: 100px;
+}
+
+.fizz {
+    background-color: lightskyblue;
+}
+
+.buzz {
+    background-color: lightseagreen;
+}
+
+.fizzbuzz {
+    background-color: lightsalmon;
+}
+
+.default {
+    background-color: lightgrey;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 923px) {
+    #cells {
+        grid-template-columns: repeat(5, auto);
+        column-gap: 10px;
+        
+    }
+  }
+
+
+  @media only screen and (min-width: 924px) {
+    #cells {
+        grid-template-columns: repeat(10, auto);
+        column-gap: 15px;
+    }
+  }
